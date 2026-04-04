@@ -1,0 +1,296 @@
+<svg width="860" height="380" viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background -->
+    <radialGradient id="orb1" cx="15%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="85%" cy="80%" r="35%">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="90%" cy="25%" r="30%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nameGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f0e6ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="underline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#a855f7"/>
+      <stop offset="70%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sideBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="codeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="bannerClip">
+      <rect width="860" height="380" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+
+    <!-- ── Background ── -->
+    <rect width="860" height="380" fill="#080b10"/>
+
+    <!-- Grid lines horizontal -->
+    <g stroke="#a855f7" stroke-opacity="0.07" stroke-width="1">
+      <line x1="0" y1="40"  x2="860" y2="40"/>
+      <line x1="0" y1="80"  x2="860" y2="80"/>
+      <line x1="0" y1="120" x2="860" y2="120"/>
+      <line x1="0" y1="160" x2="860" y2="160"/>
+      <line x1="0" y1="200" x2="860" y2="200"/>
+      <line x1="0" y1="240" x2="860" y2="240"/>
+      <line x1="0" y1="280" x2="860" y2="280"/>
+      <line x1="0" y1="320" x2="860" y2="320"/>
+      <line x1="0" y1="360" x2="860" y2="360"/>
+    </g>
+    <!-- Grid lines vertical -->
+    <g stroke="#a855f7" stroke-opacity="0.07" stroke-width="1">
+      <line x1="40"  y1="0" x2="40"  y2="380"/>
+      <line x1="80"  y1="0" x2="80"  y2="380"/>
+      <line x1="120" y1="0" x2="120" y2="380"/>
+      <line x1="160" y1="0" x2="160" y2="380"/>
+      <line x1="200" y1="0" x2="200" y2="380"/>
+      <line x1="240" y1="0" x2="240" y2="380"/>
+      <line x1="280" y1="0" x2="280" y2="380"/>
+      <line x1="320" y1="0" x2="320" y2="380"/>
+      <line x1="360" y1="0" x2="360" y2="380"/>
+      <line x1="400" y1="0" x2="400" y2="380"/>
+      <line x1="440" y1="0" x2="440" y2="380"/>
+      <line x1="480" y1="0" x2="480" y2="380"/>
+      <line x1="520" y1="0" x2="520" y2="380"/>
+      <line x1="560" y1="0" x2="560" y2="380"/>
+      <line x1="600" y1="0" x2="600" y2="380"/>
+      <line x1="640" y1="0" x2="640" y2="380"/>
+      <line x1="680" y1="0" x2="680" y2="380"/>
+      <line x1="720" y1="0" x2="720" y2="380"/>
+      <line x1="760" y1="0" x2="760" y2="380"/>
+      <line x1="800" y1="0" x2="800" y2="380"/>
+      <line x1="840" y1="0" x2="840" y2="380"/>
+    </g>
+
+    <!-- ── Orbs ── -->
+    <rect width="860" height="380" fill="url(#orb1)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="860" height="380" fill="url(#orb2)">
+      <animate attributeName="opacity" values="1;0.6;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="860" height="380" fill="url(#orb3)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ── Floating particles ── -->
+    <g fill="#a855f7">
+      <circle r="2.5" cx="80"  cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="6s" begin="0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="6s" begin="0s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2" cx="160" cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="8s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="8s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" cx="260" cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="7s" begin="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.9;0" dur="7s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2" cx="380" cy="380" opacity="0" fill="#e879f9">
+        <animate attributeName="cy" values="380;0" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.7;0" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.5" cx="500" cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="9s" begin="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="9s" begin="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2" cx="620" cy="380" opacity="0" fill="#6366f1">
+        <animate attributeName="cy" values="380;0" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" cx="720" cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="7.5s" begin="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.7;0" dur="7.5s" begin="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2" cx="800" cy="380" opacity="0" fill="#e879f9">
+        <animate attributeName="cy" values="380;0" dur="5.5s" begin="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="5.5s" begin="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="1.5" cx="330" cy="380" opacity="0" fill="#c084fc">
+        <animate attributeName="cy" values="380;0" dur="10s" begin="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="10s" begin="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2" cx="460" cy="380" opacity="0">
+        <animate attributeName="cy" values="380;0" dur="8s" begin="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.7;0" dur="8s" begin="5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- ── Corner brackets ── -->
+    <g stroke-width="2" fill="none">
+      <!-- TL -->
+      <polyline points="16,36 16,16 36,16">
+        <animate attributeName="stroke" values="#a855f766;#e879f9ee;#a855f766" dur="3s" repeatCount="indefinite"/>
+      </polyline>
+      <!-- TR -->
+      <polyline points="824,16 844,16 844,36">
+        <animate attributeName="stroke" values="#a855f766;#e879f9ee;#a855f766" dur="3s" begin="0.75s" repeatCount="indefinite"/>
+      </polyline>
+      <!-- BL -->
+      <polyline points="16,344 16,364 36,364">
+        <animate attributeName="stroke" values="#a855f766;#e879f9ee;#a855f766" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      </polyline>
+      <!-- BR -->
+      <polyline points="824,364 844,364 844,344">
+        <animate attributeName="stroke" values="#a855f766;#e879f9ee;#a855f766" dur="3s" begin="2.25s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+
+    <!-- ── Side bars ── -->
+    <rect x="32" y="150" width="3" height="80" rx="2" fill="url(#sideBar)" opacity="0.8"/>
+    <rect x="825" y="150" width="3" height="80" rx="2" fill="url(#sideBar)" opacity="0.8"/>
+
+    <!-- ── Status badge ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
+      <rect x="310" y="62" width="240" height="24" rx="12" fill="#a855f71a" stroke="#a855f74d" stroke-width="1"/>
+      <!-- green dot -->
+      <circle cx="326" cy="74" r="4" fill="#4ade80" filter="url(#blur4)"/>
+      <circle cx="326" cy="74" r="3" fill="#4ade80">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="338" y="79" font-family="JetBrains Mono, monospace" font-size="10" fill="#e879f9cc" letter-spacing="1.5">AVAILABLE FOR PROJECTS</text>
+    </g>
+
+    <!-- ── Name ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.6s" fill="freeze"/>
+      <!-- glow layer -->
+      <text x="430" y="158" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="56" font-weight="800" fill="#a855f7" filter="url(#blur8)" opacity="0.5">Reginanka</text>
+      <!-- main -->
+      <text x="430" y="158" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="56" font-weight="800" fill="url(#nameGlow)">Reginanka</text>
+    </g>
+    <!-- underline -->
+    <rect x="230" y="166" width="400" height="2" rx="1" fill="url(#underline)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.3s" fill="freeze"/>
+    </rect>
+
+    <!-- ── Role ── -->
+    <text x="430" y="196" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="400" fill="#a855f7" letter-spacing="3" opacity="0">
+      AI AUTOMATION ENGINEER
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze"/>
+    </text>
+
+    <!-- ── Typewriter lines ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+      <text x="370" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#a855f77f">&gt;_</text>
+
+      <!-- Line 1 -->
+      <text x="392" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#e879f9">
+        <tspan>🤖 Building AI Agents &amp; RAG Systems</tspan>
+        <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <!-- Line 2 -->
+      <text x="392" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#e879f9" opacity="0">
+        <tspan>⚙️ n8n · Make.com · Power User</tspan>
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <!-- Line 3 -->
+      <text x="392" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#e879f9" opacity="0">
+        <tspan>🐍 Python + Aiogram + FastAPI</tspan>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <!-- Line 4 -->
+      <text x="392" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#e879f9" opacity="0">
+        <tspan>🧠 LangChain · OpenAI · Gemini · Claude</tspan>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <!-- Line 5 -->
+      <text x="392" y="228" font-family="JetBrains Mono, monospace" font-size="13" fill="#e879f9" opacity="0">
+        <tspan>🚀 100+ bots shipped · Automate → Scale</tspan>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0" dur="20s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Blinking cursor -->
+      <rect x="392" y="215" width="2" height="15" rx="1" fill="#e879f9">
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+        <!-- Move cursor after each line (approximate) -->
+        <animate attributeName="x" values="616;507;490;636;636" dur="20s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ── Skill chips ── -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="1.6s" fill="freeze"/>
+
+      <!-- Row 1 -->
+      <rect x="164" y="252" width="68" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="198" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">Python</text>
+
+      <rect x="240" y="252" width="44" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="262" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">n8n</text>
+
+      <rect x="292" y="252" width="80" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="332" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">Make.com</text>
+
+      <rect x="380" y="252" width="82" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="421" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">LangChain</text>
+
+      <rect x="470" y="252" width="72" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="506" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">Aiogram</text>
+
+      <rect x="550" y="252" width="66" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="583" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">FastAPI</text>
+
+      <rect x="624" y="252" width="72" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="660" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">Docker</text>
+
+      <!-- Row 2 -->
+      <rect x="228" y="282" width="88" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="272" y="297" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">RAG Systems</text>
+
+      <rect x="324" y="282" width="82" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="365" y="297" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">AI Agents</text>
+
+      <rect x="414" y="282" width="84" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="456" y="297" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">PostgreSQL</text>
+
+      <rect x="506" y="282" width="72" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="542" y="297" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">BigQuery</text>
+
+      <rect x="586" y="282" width="48" height="22" rx="5" fill="#a855f714" stroke="#a855f733" stroke-width="1"/>
+      <text x="610" y="297" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffffff99" letter-spacing="0.5">GCP</text>
+    </g>
+
+    <!-- ── Bottom code line ── -->
+    <text x="430" y="352" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#a855f74d" letter-spacing="1" opacity="0">
+      automate.today() → scale.tomorrow()
+      <animate attributeName="opacity" values="0;0.8" dur="0.5s" begin="2s" fill="freeze"/>
+    </text>
+
+    <!-- ── Scanlines ── -->
+    <rect width="860" height="380" fill="url(#scanlines)" opacity="0.04"/>
+
+  </g>
+</svg>
