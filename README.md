@@ -9,7 +9,7 @@
 
 ---
 <details>	
-    <summary><b>📈 Get my Code stats</b></summary><br>
+    <summary><b>📈 GitHub Stats</b></summary><br>
 
 <div align="center">
   
