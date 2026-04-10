@@ -4,3 +4,8 @@
 <div align="center">
   <img src="banner_v3.svg" alt="Reginanka Banner"/>
 </div>
+
+<div align="center">
+  
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&duration=5123&pause=1000&color=FF0000&center=true&vCenter=true&multiline=true&width=520&lines=Automate+the+boring.+Build+the+impossible.)](https://git.io/typing-svg)
+</div>
