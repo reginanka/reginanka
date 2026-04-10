@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <img src="banner_v3.svg" alt="Reginanka Banner"/>
+  <img src="Assets/banner.svg" alt="Reginanka Banner"/>
 </div>
 
 
