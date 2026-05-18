@@ -9,7 +9,7 @@
 ---
 
 <details>	
-    <summary><h2><b>Certification Badges 🪶</b></h2></summary><br>
+    <summary><b>Certification Badges 🪶</b></summary><br>
 
 <div style='display:flex; align-items:center; gap: 10px;' align='center'>  
 
