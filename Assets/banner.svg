@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&amp;family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      
+      .text-brand { font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 34px; fill: #FFFFFF; letter-spacing: 3px; }
+      .text-brand-red { fill: #FF003C; }
+      .text-status { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; fill: #39FF14; letter-spacing: 1px; }
+      .text-substatus { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #555555; }
+      .text-hero { font-family: 'JetBrains Mono', monospace; font-size: 18px; fill: #BBBBBB; }
+      .text-hero-bold { font-weight: 700; fill: #FFFFFF; }
+      .text-card-title { font-family: 'Orbitron', sans-serif; font-size: 14px; font-weight: 700; fill: #FFFFFF; letter-spacing: 1px; }
+      .text-card-item { font-family: 'Inter', sans-serif; font-size: 13px; fill: #999999; }
+      .text-card-bullet { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: bold; fill: #FF003C; }
+      .text-footer-label { font-family: 'Orbitron', sans-serif; font-size: 10px; fill: #FFFFFF; letter-spacing: 2px; }
+      .text-cert { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; fill: #39FF14; letter-spacing: 1px; }
+      
+      @keyframes pulse {
+        0% { opacity: 0.4; r: 4; }
+        50% { opacity: 1; r: 6; }
+        100% { opacity: 0.4; r: 4; }
+      }
+      .status-dot { animation: pulse 2s infinite; fill: #39FF14; }
+    </style>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+    
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#39FF14" stroke-width="1" opacity="0.03" />
+    </pattern>
+
+    <linearGradient id="top-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF003C" />
+      <stop offset="100%" stop-color="#39FF14" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#080808" />
+  
+  <circle cx="150" cy="120" r="250" fill="#FF003C" opacity="0.12" filter="url(#glow)" />
+  <circle cx="1050" cy="500" r="220" fill="#39FF14" opacity="0.09" filter="url(#glow)" />
+  
+  <rect width="1200" height="630" fill="url(#grid)" />
+  
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="20" x2="1200" y2="20" />
+    <line x1="0" y1="40" x2="1200" y2="40" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+  </g>
+
+  <rect x="0" y="0" width="1200" height="3" fill="url(#top-line-grad)" />
+
+  <g transform="translate(80, 80)">
+    <text x="0" y="30" class="text-brand">REHINA <tspan class="text-brand-red">NANAKA</tspan></text>
+    
+    <g transform="translate(1040, 15)">
+      <circle cx="-115" cy="2" class="status-dot" />
+      <text x="-100" y="5" class="text-status" text-anchor="start">VERIFIED EXPERT</text>
+      <text x="-100" y="20" class="text-substatus" text-anchor="start">WORKFLOW ARCHITECT</text>
+      <line x1="45" y1="-5" x2="45" y2="25" stroke="#39FF14" stroke-width="3" />
+    </g>
+  </g>
+
+  <g transform="translate(80, 190)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#FF003C" stroke-width="4" />
+    <text x="25" y="18" class="text-hero">Enterprise-grade autonomous systems and intelligent automation in</text>
+    <text x="25" y="42" class="text-hero"><tspan class="text-hero-bold">n8n, Make, and Zapier</tspan>.</text>
+  </g>
+
+  <g transform="translate(80, 290)">
+    <rect width="320" height="190" fill="#141414" fill-opacity="0.7" stroke="#222222" stroke-width="1" rx="4" />
+    <path d="M 0 15 L 0 0 L 15 0" fill="none" stroke="#39FF14" stroke-width="2" />
+    
+    <text x="25" y="35" class="text-card-title">AUTONOMOUS AI</text>
+    <line x1="25" y1="48" x2="295" y2="48" stroke="#333333" stroke-width="1" />
+    
+    <g transform="translate(25, 75)">
+      <text x="0" y="0" class="text-card-bullet">/&gt;</text><text x="25" y="0" class="text-card-item">Custom AI Agent Building</text>
+      <text x="0" y="24" class="text-card-bullet">/&gt;</text><text x="25" y="24" class="text-card-item">Local LLM (OpenAI / Gemma)</text>
+      <text x="0" y="48" class="text-card-bullet">/&gt;</text><text x="25" y="48" class="text-card-item">RAG: Custom Document QA</text>
+      <text x="0" y="72" class="text-card-bullet">/&gt;</text><text x="25" y="72" class="text-card-item">Model Fine-tuning</text>
+    </g>
+  </g>
+
+  <g transform="translate(440, 290)">
+    <rect width="320" height="190" fill="#141414" fill-opacity="0.7" stroke="#222222" stroke-width="1" rx="4" />
+    <path d="M 0 15 L 0 0 L 15 0" fill="none" stroke="#39FF14" stroke-width="2" />
+    
+    <text x="25" y="35" class="text-card-title">WORKFLOW ARCH</text>
+    <line x1="25" y1="48" x2="295" y2="48" stroke="#333333" stroke-width="1" />
+    
+    <g transform="translate(25, 75)">
+      <text x="0" y="0" class="text-card-bullet">/&gt;</text><text x="25" y="0" class="text-card-item">Complex Multi-Step Workflows</text>
+      <text x="0" y="24" class="text-card-bullet">/&gt;</text><text x="25" y="24" class="text-card-item">Google Workspace Automation</text>
+      <text x="0" y="48" class="text-card-bullet">/&gt;</text><text x="25" y="48" class="text-card-item">Telegram Bot Ecosystems</text>
+      <text x="0" y="72" class="text-card-bullet">/&gt;</text><text x="25" y="72" class="text-card-item">Web Scraping Solutions</text>
+    </g>
+  </g>
+
+  <g transform="translate(800, 290)">
+    <rect width="320" height="190" fill="#141414" fill-opacity="0.7" stroke="#222222" stroke-width="1" rx="4" />
+    <path d="M 0 15 L 0 0 L 15 0" fill="none" stroke="#39FF14" stroke-width="2" />
+    
+    <text x="25" y="35" class="text-card-title">BUSINESS OPS</text>
+    <line x1="25" y1="48" x2="295" y2="48" stroke="#333333" stroke-width="1" />
+    
+    <g transform="translate(25, 75)">
+      <text x="0" y="0" class="text-card-bullet">/&gt;</text><text x="25" y="0" class="text-card-item">AI Video Processing</text>
+      <text x="0" y="24" class="text-card-bullet">/&gt;</text><text x="25" y="24" class="text-card-item">Lead Magnets &amp; Qualification</text>
+      <text x="0" y="48" class="text-card-bullet">/&gt;</text><text x="25" y="48" class="text-card-item">API &amp; Docker Infrastructure</text>
+      <text x="0" y="72" class="text-card-bullet">/&gt;</text><text x="25" y="72" class="text-card-item">PostgreSQL Database Arch</text>
+    </g>
+  </g>
+
+  <g transform="translate(80, 510)">
+    <rect width="1040" height="60" fill="#000000" fill-opacity="0.5" stroke="#222222" stroke-width="1" rx="4" />
+    <line x1="0" y1="0" x2="0" y2="60" stroke="#FF003C" stroke-width="3" />
+    
+    <text x="30" y="35" class="text-footer-label">OFFICIALLY CERTIFIED</text>
+    
+    <g transform="translate(230, 18)">
+      <rect x="0" y="0" width="60" height="24" fill="none" stroke="#39FF14" stroke-width="1" rx="2" />
+      <text x="30" y="15" class="text-cert" text-anchor="middle">MAKE</text>
+      
+      <rect x="72" y="0" width="110" height="24" fill="none" stroke="#39FF14" stroke-width="1" rx="2" />
+      <text x="127" y="15" class="text-cert" text-anchor="middle">GOOGLE CLOUD</text>
+      
+      <rect x="194" y="0" width="90" height="24" fill="none" stroke="#39FF14" stroke-width="1" rx="2" />
+      <text x="239" y="15" class="text-cert" text-anchor="middle">ANTHROPIC</text>
+      
+      <rect x="296" y="0" width="50" height="24" fill="none" stroke="#39FF14" stroke-width="1" rx="2" />
+      <text x="321" y="15" class="text-cert" text-anchor="middle">N8N</text>
+      
+      <rect x="358" y="0" width="80" height="24" fill="none" stroke="#39FF14" stroke-width="1" rx="2" />
+      <text x="398" y="15" class="text-cert" text-anchor="middle">AIRTABLE</text>
+    </g>
+  </g>
+</svg>
